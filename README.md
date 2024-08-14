@@ -5,6 +5,7 @@ Aim
 The aim of this experiment is to develop a user interface (UI) for a restaurant, specifically focusing on creating an engaging and visually appealing webpage that showcases various dishes and restaurant information. The goal is to utilize HTML and CSS to design a responsive and attractive layout that enhances user experience.
 
 Theory
+
 1. HTML (Hypertext Markup Language):
 HTML is the standard language used to create and design web pages. It provides the structure and content of a webpage through the use of elements and tags.
 Key HTML Elements Used:
@@ -13,6 +14,7 @@ Key HTML Elements Used:
 <section>: Defines sections in a webpage, which can be styled separately.
 <div>: Used as a container to group and style other elements.
 <img>: Embeds images into the webpage, crucial for displaying restaurant dishes.
+
 2. CSS (Cascading Style Sheets):
 CSS is used to control the presentation and layout of HTML elements. It allows for styling and designing of the webpage, including colors, fonts, and spacing.
 Key CSS Features Used:
