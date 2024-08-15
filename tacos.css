@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading-container {
+    margin-top: -300px; /* Move the image upwards */
+    margin-left: 80px;
+}
+
+.heading-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    max-height: 50px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.grid-item {
+    background-color: #131212;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Start with a slight downward shift */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Apply animation when item appears */
+.grid-item.appear {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #000000;
+}
+
+.dish img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dish h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
